@@ -8,5 +8,11 @@
     "url": "https://github.com/dev55acc-ai/paid-mcp-metering",
     "source": "github"
   },
-  "version": "1.0.1"
+  "version": "2.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://paid-mcp-metering-clsiojdd7-benlafreniere6-3913s-projects.vercel.app/mcp"
+    }
+  ]
 }

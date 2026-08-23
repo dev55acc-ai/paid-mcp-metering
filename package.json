@@ -1,6 +1,6 @@
 {
   "name": "paid-mcp-metering",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Metered MCP tools. Free discovery over MCP; execution priced per call and settled in USDC via x402 v2.",
   "type": "module",
   "main": "dist/mcp-server.js",

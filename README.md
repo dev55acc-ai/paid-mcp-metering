@@ -4,6 +4,16 @@ Metered MCP tools, priced per call.
 
 Discovery is free: `POST /mcp` speaks JSON-RPC 2.0 per the Model Context Protocol (`initialize`, `tools/list`, `ping`). Execution is metered: `POST /v1/t/{tool}` sits behind an x402 v2 paywall. An unpaid request gets HTTP `402` with payment requirements; a paid request carries a `PAYMENT-SIGNATURE` header and settles USDC through the facilitator before the tool runs.
 
+## Live deployment
+
+Base URL: `https://paid-mcp-metering-clsiojdd7-benlafreniere6-3913s-projects.vercel.app`
+
+- `GET /health` — free, public
+- `POST /mcp` — free discovery
+- `POST /v1/t/{tool}` — metered; currently answers `503 settlement_not_configured` because `X402_PAY_TO` is unset on the deployment (`settlementConfigured:false` in `/health` is the honest switch). No payment can be accepted until a receiving address is configured.
+
+`server.json` declares this URL as the registry remote.
+
 ## Tools
 
 | Tool | Price | What it returns |
