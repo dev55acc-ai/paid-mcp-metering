@@ -1,0 +1,40 @@
+{
+  "name": "paid-mcp-metering",
+  "version": "1.0.0",
+  "description": "Metered MCP tools. Free discovery over MCP; execution priced per call and settled in USDC via x402 v2.",
+  "type": "module",
+  "main": "dist/mcp-server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/x402-server.js",
+    "test": "npm run build && node --test dist/test-x402.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "@x402/core": "^2.23.0",
+    "@x402/evm": "^2.23.0",
+    "@x402/express": "^2.23.0",
+    "express": "^5.2.1",
+    "stripe": "^22.5.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.2.0",
+    "typescript": "^5.0.0"
+  },
+  "license": "MIT",
+  "mcpName": "io.github.dev55acc-ai/paid-mcp-metering",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dev55acc-ai/paid-mcp-metering.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "bin": {
+    "paid-mcp-metering": "dist/x402-server.js"
+  }
+}
