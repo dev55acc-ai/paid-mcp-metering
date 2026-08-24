@@ -12,7 +12,7 @@
   "remotes": [
     {
       "type": "streamable-http",
-      "url": "https://paid-mcp-metering-clsiojdd7-benlafreniere6-3913s-projects.vercel.app/mcp"
+      "url": "https://paid-mcp-metering.vercel.app/mcp"
     }
   ]
 }

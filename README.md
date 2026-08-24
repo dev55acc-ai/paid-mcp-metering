@@ -6,7 +6,7 @@ Discovery is free: `POST /mcp` speaks JSON-RPC 2.0 per the Model Context Protoco
 
 ## Live deployment
 
-Base URL: `https://paid-mcp-metering-clsiojdd7-benlafreniere6-3913s-projects.vercel.app`
+Base URL: `https://paid-mcp-metering.vercel.app`
 
 - `GET /health` — free, public
 - `POST /mcp` — free discovery
